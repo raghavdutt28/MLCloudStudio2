@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Modal from './modal';
 import VideoPlayer from './videoPlayer';
 
-const PreviewButton = ({ data, icon }) => {
+const PreviewButton = ( data, icon ) => {
 
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
