@@ -34,7 +34,7 @@ const initializeRazorpayButton = (buttonId) => {
   };
 };
 
-const CourseCard = ({ onPreviewClick, buttonId, image, courseDifficulty, courseDuration, courseTitle, tutorName, tutorCredentials, price, courseDesc }) => {
+const CourseCard = ({ buttonId, image, courseDifficulty, courseDuration, courseTitle, tutorName, tutorCredentials, price, courseDesc }) => {
   
   
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
