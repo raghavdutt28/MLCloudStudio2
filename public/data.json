@@ -1,0 +1,174 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Integrate ChatGPT",
+            "content": "SDXL consists of an ensemble of experts pipeline for latent diffusion...",
+            "image": "/UseCase_images/integratechatgpt.png",
+            "modelDescription": {
+                "developed_by": "Stability AI",
+                "model_type": "Diffusion-based text-to-image generative model",
+                "license": "CreativeML Open RAIL++-M License",
+                "model_sources": {
+                    "repository": "https://github.com/Stability-AI/generative-models",
+                    "demo": "https://clipdrop.co/stable-diffusion"
+                }
+            },
+            "evaluation": {
+                "chart_description": "The chart above evaluates user preference for SDXL...",
+                "diffusers_upgrade": "Make sure to upgrade diffusers to >= 0.19.0:",
+                "pip_commands": [
+                    "pip install diffusers --upgrade",
+                    "pip install invisible_watermark transformers accelerate safetensors"
+                ],
+                "usage_instructions": "To just use the base model, you can run...",
+                "example_code": [
+                    "from diffusers import DiffusionPipeline",
+                    "import torch",
+                    "pipe = DiffusionPipeline.from_pretrained(...)",
+                    "pipe.to('cuda')",
+                    "# if using torch < 2.0",
+                    "# pipe.enable_xformers_memory_efficient_attention()",
+                    "prompt = 'An astronaut riding a green horse'",
+                    "images = pipe(prompt=prompt).images[0]"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "title": "ChatGPT with Enterprise Data",
+            "content": "SDXL consists of an ensemble of experts pipeline for latent diffusion...",
+            "image": "/UseCase_images/privatellm.png",
+            "modelDescription": {
+                "developed_by": "Stability AI",
+                "model_type": "Diffusion-based text-to-image generative model",
+                "license": "CreativeML Open RAIL++-M License",
+                "model_sources": {
+                    "repository": "https://github.com/Stability-AI/generative-models",
+                    "demo": "https://clipdrop.co/stable-diffusion"
+                }
+            },
+            "evaluation": {
+                "chart_description": "The chart above evaluates user preference for SDXL...",
+                "diffusers_upgrade": "Make sure to upgrade diffusers to >= 0.19.0:",
+                "pip_commands": [
+                    "pip install diffusers --upgrade",
+                    "pip install invisible_watermark transformers accelerate safetensors"
+                ],
+                "usage_instructions": "To just use the base model, you can run...",
+                "example_code": [
+                    "from diffusers import DiffusionPipeline",
+                    "import torch",
+                    "pipe = DiffusionPipeline.from_pretrained(...)",
+                    "pipe.to('cuda')",
+                    "# if using torch < 2.0",
+                    "# pipe.enable_xformers_memory_efficient_attention()",
+                    "prompt = 'An astronaut riding a green horse'",
+                    "images = pipe(prompt=prompt).images[0]"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "title": "Private GPT: Fine-Tune LLM on Enterprise Data",
+            "content": "SDXL consists of an ensemble of experts pipeline for latent diffusion...",
+            "image": "/UseCase_images/privateGPT.png",
+            "modelDescription": {
+                "developed_by": "Stability AI",
+                "model_type": "Diffusion-based text-to-image generative model",
+                "license": "CreativeML Open RAIL++-M License",
+                "model_sources": {
+                    "repository": "https://github.com/Stability-AI/generative-models",
+                    "demo": "https://clipdrop.co/stable-diffusion"
+                }
+            },
+            "evaluation": {
+                "chart_description": "The chart above evaluates user preference for SDXL...",
+                "diffusers_upgrade": "Make sure to upgrade diffusers to >= 0.19.0:",
+                "pip_commands": [
+                    "pip install diffusers --upgrade",
+                    "pip install invisible_watermark transformers accelerate safetensors"
+                ],
+                "usage_instructions": "To just use the base model, you can run...",
+                "example_code": [
+                    "from diffusers import DiffusionPipeline",
+                    "import torch",
+                    "pipe = DiffusionPipeline.from_pretrained(...)",
+                    "pipe.to('cuda')",
+                    "# if using torch < 2.0",
+                    "# pipe.enable_xformers_memory_efficient_attention()",
+                    "prompt = 'An astronaut riding a green horse'",
+                    "images = pipe(prompt=prompt).images[0]"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "title": "AI Generated Voice with Cloning",
+            "content": "SDXL consists of an ensemble of experts pipeline for latent diffusion...",
+            "image": "/UseCase_images/generativevoice.png",
+            "modelDescription": {
+                "developed_by": "Stability AI",
+                "model_type": "Diffusion-based text-to-image generative model",
+                "license": "CreativeML Open RAIL++-M License",
+                "model_sources": {
+                    "repository": "https://github.com/Stability-AI/generative-models",
+                    "demo": "https://clipdrop.co/stable-diffusion"
+                }
+            },
+            "evaluation": {
+                "chart_description": "The chart above evaluates user preference for SDXL...",
+                "diffusers_upgrade": "Make sure to upgrade diffusers to >= 0.19.0:",
+                "pip_commands": [
+                    "pip install diffusers --upgrade",
+                    "pip install invisible_watermark transformers accelerate safetensors"
+                ],
+                "usage_instructions": "To just use the base model, you can run...",
+                "example_code": [
+                    "from diffusers import DiffusionPipeline",
+                    "import torch",
+                    "pipe = DiffusionPipeline.from_pretrained(...)",
+                    "pipe.to('cuda')",
+                    "# if using torch < 2.0",
+                    "# pipe.enable_xformers_memory_efficient_attention()",
+                    "prompt = 'An astronaut riding a green horse'",
+                    "images = pipe(prompt=prompt).images[0]"
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "title": "Text-to-Image, Image-to-Image",
+            "content": "SDXL consists of an ensemble of experts pipeline for latent diffusion...",
+            "image": "/UseCase_images/text2image.png",
+            "modelDescription": {
+                "developed_by": "Stability AI",
+                "model_type": "Diffusion-based text-to-image generative model",
+                "license": "CreativeML Open RAIL++-M License",
+                "model_sources": {
+                    "repository": "https://github.com/Stability-AI/generative-models",
+                    "demo": "https://clipdrop.co/stable-diffusion"
+                }
+            },
+            "evaluation": {
+                "chart_description": "The chart above evaluates user preference for SDXL...",
+                "diffusers_upgrade": "Make sure to upgrade diffusers to >= 0.19.0:",
+                "pip_commands": [
+                    "pip install diffusers --upgrade",
+                    "pip install invisible_watermark transformers accelerate safetensors"
+                ],
+                "usage_instructions": "To just use the base model, you can run...",
+                "example_code": [
+                    "from diffusers import DiffusionPipeline",
+                    "import torch",
+                    "pipe = DiffusionPipeline.from_pretrained(...)",
+                    "pipe.to('cuda')",
+                    "# if using torch < 2.0",
+                    "# pipe.enable_xformers_memory_efficient_attention()",
+                    "prompt = 'An astronaut riding a green horse'",
+                    "images = pipe(prompt=prompt).images[0]"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 6px 160px 24px;
+  pointer-events: none;
+}
+
+.main:before {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fff 100%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 justify-center items-center flex-col max-w-screen-xl mx-auto sm:px-6 px-6;
+}
+
+.secondary_btn {
+  @apply cursor-pointer rounded-md border-[1.6px] border-gray-500 bg-white py-2 px-4 font-poppins text-dark font-normal transition-all hover:bg-white hover:text-dark text-center text-xs md:text-sm flex gap-2 items-center justify-center drop-shadow-container hover:drop-shadow-none;
+}
+.primary_btn {
+    @apply max-w-[200px] cursor-pointer rounded-md bg-dark drop-shadow-l hover:drop-shadow-none py-2 px-4 gap-2 font-poppins text-accent font-normal transition-all hover:bg-dark hover:text-accent text-center text-xs md:text-sm flex items-center justify-center;
+  }
+
+.head_text {
+  @apply text-3xl font-semibold font-poppins leading-[1.15] text-dark md:text-6xl;
+}
+.head_text_white {
+  @apply text-3xl font-semibold font-poppins leading-[1.15] text-dark md:text-6xl text-white;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.search_input {
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-montserrat pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+
+/* navbar */
+
+.mobile-menu {
+  @apply absolute right-0 top-full mt-3 w-fit p-5 rounded-md bg-white min-w-[210px] flex flex-col gap-2 justify-end items-start z-[10] gap-4;
+}
+
+
+/* hero section  */
+
+.deco_triangle{
+  @apply absolute md:scale-[1]  md:top-[-5px] md:left-[64px] z-[-1] scale-[0.5] top-[-64px] left-[0px]
+}
+
+/* Feed Component */
+.feed {
+  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply font-poppins font-semibold text-lg text-black tracking-wide text-xl md:text-3xl;
+}
+.nav_link {
+    @apply font-poppins font-normal text-black tracking-wide text-sm cursor-pointer;
+  }
+.logo_text_span {
+   @apply text-accent
+}
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm font-poppins text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* Card Component */
+.feature_layout {
+  @apply py-8 sm:grid sm:grid-cols-2 gap-6 xl:grid-cols-5 flex flex-col items-center;
+}
+
+.feature_card {
+  @apply justify-center items-center mx-auto md:mx-0 flex flex-col bg-dark text-accent w-56 h-80 min-h-[10rem] drop-shadow-l rounded-md overflow-hidden cursor-pointer hover:scale-[1.01] hover:drop-shadow-none hover:transition-all
+}
+
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between;
+}
+.text-para-xsmall{
+  @apply mt-1 text-xs text-dark sm:text-xs max-w-xl font-montserrat font-normal;
+}
+.text-para-small {
+  @apply mt-1 text-sm text-gray-500 md:text-base max-w-2xl font-montserrat font-normal;
+}
+.link {
+    @apply mt-1 text-base text-accent md:text-base max-w-2xl font-poppins;
+}
+.text-para-big{
+  @apply mt-1 text-xl text-dark md:text-lg max-w-xl font-semibold font-montserrat;
+}
+.text-subhead{
+  @apply mt-1 text-3xl sm:text-3xl w-full font-semibold font-poppins;
+}
+
+/* progress bar */
+
+.progressbar{
+	position: relative;
+	overflow: hidden;
+	width: 4px;
+	height: full;
+	border-radius: 5px;
+}
+.highlighted{
+  transition: all, 0.6s;
+
+  @apply mt-1 text-dark font-medium font-montserrat scale-[1.025] translate-x-[1rem]
+  
+}
+
+/* pricing card  */
+
+.pricing_card{
+  @apply flex flex-col bg-white text-dark w-[400px] h-[400px] min-h-[10rem] p-8 drop-shadow-container rounded-md 
+  overflow-hidden cursor-pointer hover:drop-shadow-none hover:transition-all hover:bg-dark hover:text-white hover:border-white
+}
+.features{
+  @apply mt-1 text-xl sm:text-xl max-w-xl font-semibold font-montserrat border-b-2 border-accent pb-1;
+}
+.feature{
+  @apply mt-1 text-xs sm:text-xs max-w-xl font-montserrat font-normal ;
+}
+.type{
+  @apply mt-1 pl-1 text-base sm:text-base max-w-2xl font-montserrat font-normal;
+}
+.price{
+  @apply text-5xl font-semibold font-poppins leading-[1.15] sm:text-6xl;
+}
+
+/* course card  */
+
+.course_card{
+  @apply w-[360px] h-fit bg-white p-4 drop-shadow-l rounded-md overflow-hidden hover:drop-shadow-none hover:transition-all flex flex-col gap-4 mx-auto md:mx-0;
+}
+.pay_btn{
+  @apply max-w-[200px] cursor-pointer rounded-md ;
+}
+
+/* testimony card  */
+
+.testimony_card{
+  @apply w-[500px] h-[200px] grid grid-cols-[1fr,2fr] gap-12 mx-auto lg:mx-0;
+}
+
+
+/* blog  */
+
+.blog{
+  @apply w-[360px] h-[320px] p-4 drop-shadow-container rounded-md overflow-hidden cursor-pointer hover:drop-shadow-none hover:transition-all flex flex-col bg-white mx-auto lg:mx-0
+}
+/* Contact Us Modal */
+
+.modal {
+  @apply w-[600px] bg-white p-4 rounded-md absolute z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border;
+}
+
+.overlay {
+  @apply w-full h-full fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-40;
+}
