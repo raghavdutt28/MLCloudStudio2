@@ -85,7 +85,7 @@ const CourseCard = ({ onPreviewClick, buttonId, image, courseDifficulty, courseD
         src={image}
         alt={courseTitle}
       />
-      <PreviewButton data="Course Preview" icon={playIcon} onClick={openVideoModal} />
+      <PreviewButton data="Course Preview" icon={playIcon} onclick={openVideoModal} />
       <Modal isOpen={isVideoModalOpen} onRequestClose={closeVideoModal}>
         <VideoPlayer />
       </Modal>
