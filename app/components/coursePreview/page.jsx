@@ -1,9 +1,9 @@
 // PreviewButton.js
 import React from 'react';
 
-const PreviewButton = ({ data, icon, onclick }) => {
+const PreviewButton = ({ data, icon, handleOnClick }) => {
   return (
-    <button className='secondary_btn' onClick={onclick}>
+    <button className='secondary_btn' onClick={handleOnClick}>
       {data}
       {icon && icon}
     </button>
