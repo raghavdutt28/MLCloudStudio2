@@ -1,6 +1,6 @@
 // FeatureCardList.jsx
 import React from 'react';
-import FeatureCard from './FeatureCard'; // Assuming FeatureCard is in the same directory
+import FeatureCard from './featureCard'; // Assuming FeatureCard is in the same directory
 
 const FeatureCardList = ({ data }) => {
   return (
