@@ -3,7 +3,7 @@ import React from 'react';
 
 const PreviewButton = ({ data, icon, handleOnClick }) => {
   return (
-    <button className='secondary_btn' onClick={handleOnClick}>
+    <button className='secondary_btn'>
       {data}
       {icon && icon}
     </button>

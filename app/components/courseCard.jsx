@@ -3,8 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import PreviewButton from './coursePreview/page';
-import Modal from './coursePreview/modal';
-import VideoPlayer from './coursePreview/videoPlayer';
 
 const initializeRazorpayButton = (buttonId) => {
   if (!buttonId) {
@@ -37,15 +35,6 @@ const initializeRazorpayButton = (buttonId) => {
 const CourseCard = ({ buttonId, image, courseDifficulty, courseDuration, courseTitle, tutorName, tutorCredentials, price, courseDesc }) => {
   
   
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-
-  const openVideoModal = () => {
-    setIsVideoModalOpen(true);
-  };
-
-  const closeVideoModal = () => {
-    setIsVideoModalOpen(false);
-  };
 
   useEffect(() => {
     const cleanup = buttonId ? initializeRazorpayButton(buttonId) : () => { };
@@ -85,10 +74,7 @@ const CourseCard = ({ buttonId, image, courseDifficulty, courseDuration, courseT
         src={image}
         alt={courseTitle}
       />
-      <PreviewButton data="Course Preview" icon={playIcon} onclick={openVideoModal} />
-      <Modal isOpen={isVideoModalOpen} onRequestClose={closeVideoModal}>
-        <VideoPlayer />
-      </Modal>
+      <PreviewButton data="Course Preview" icon={playIcon} />
       <div className='flex flex-col w-full gap-4'>
         <div className='flex justify-between'>
           <div className='flex gap-2 items-center'>
